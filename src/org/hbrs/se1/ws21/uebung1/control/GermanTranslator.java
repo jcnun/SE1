@@ -12,15 +12,22 @@ public class GermanTranslator implements Translator {
 		numbers = new HashMap<Integer, String>();
 		numbers.put(1, "eins");
 		numbers.put(2, "zwei");
+		numbers.put(3, "drei");
+		numbers.put(4, "vier");
+		numbers.put(5, "fünf");
+		numbers.put(6, "sechs");
+		numbers.put(7, "sieben");
 		numbers.put(8, "acht");
+		numbers.put(9, "neun");
+		numbers.put(10, "zehn");
 	}
 
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
-	public String translateNumber( int number ) {
+	public String translateNumber(int number) {
 		// [ihr Source Code aus Übung 1-2]
-		String s = this.numbers.getOrDefault(number, "gibts nicht");
+		String s = this.numbers.getOrDefault(number, "Übersetzung der Zahl " + number + " nicht möglich" + " " + version);
 		return s;
 	}
 		
